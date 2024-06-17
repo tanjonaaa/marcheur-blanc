@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cb5b687-c138-4980-9da1-3558f0d86ab2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/walker/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marcheur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/carte/Carte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/carte/Lieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/carte/Rue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/walker/model/MarcheurTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/walker/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +24,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2hzprNN8Qmoq5R5g5LnXWacq74f" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -35,36 +45,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "JUnit.LieuTest.can_create_new_lieu.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
+    "JUnit.MarcheurTest.bjarni_marche_sur_tana_de_hei_vers_esti.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.walker.model" />
       <recent name="com.example.walker" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MarcheurTest.bjarni_marche_sur_tana_de_hei_vers_esti">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.walker.Main" />
       <module name="walker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.walker.*" />
+          <option name="PATTERN" value="com.example.walker.model.carte.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,17 +111,49 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="LieuTest.can_create_new_lieu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="walker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.walker.model.carte.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.walker.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.walker.model.LieuTest" />
+      <option name="METHOD_NAME" value="can_create_new_lieu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="walker" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.walker.*" />
+          <option name="PATTERN" value="com.example.walker.model.carte.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.walker" />
       <option name="MAIN_CLASS_NAME" value="com.example.walker.MainTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MarcheurTest.bjarni_marche_sur_tana_de_hei_vers_esti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="walker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.walker.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.walker.model" />
+      <option name="MAIN_CLASS_NAME" value="com.example.walker.model.MarcheurTest" />
+      <option name="METHOD_NAME" value="bjarni_marche_sur_tana_de_hei_vers_esti" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,10 +234,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MarcheurTest.bjarni_marche_sur_tana_de_hei_vers_esti" />
+        <item itemvalue="JUnit.LieuTest.can_create_new_lieu" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-4caba194b151-3c5dfc45" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+        <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -198,6 +259,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718606961755</updated>
       <workItem from="1718606963048" duration="301000" />
+      <workItem from="1718607288939" duration="3736000" />
     </task>
     <servers />
   </component>
