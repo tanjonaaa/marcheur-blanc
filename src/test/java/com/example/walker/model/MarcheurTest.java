@@ -38,9 +38,9 @@ class MarcheurTest {
 
     var marcheDeBjarni = bjarni.marcheSur(carteDeTana, hei, esti);
 
-    var actualLieuDeDépart = marcheDeBjarni.getLieux().getFirst();
-    var actualLieuDArrivée = marcheDeBjarni.getLieux().getLast();
-    var longueurDeLaMarche = marcheDeBjarni.getLieux().size();
+    var actualLieuDeDépart = marcheDeBjarni.lieux().getFirst();
+    var actualLieuDArrivée = marcheDeBjarni.lieux().getLast();
+    var longueurDeLaMarche = marcheDeBjarni.lieux().size();
 
     assertEquals(hei, actualLieuDeDépart);
     assertEquals(esti, actualLieuDArrivée);
