@@ -8,10 +8,12 @@ import lombok.Getter;
 @Getter
 public class Rue {
     private final String name;
-    private final Set<Lieu> lieux;
+    private final Lieu lieu1;
+    private final Lieu lieu2;
 
-    public Rue(Set<Lieu> lieux) {
+    public Rue(Lieu lieu1, Lieu lieu2) {
         this.name = null;
-        this.lieux = lieux;
+        this.lieu1 = lieu1;
+        this.lieu2 = lieu2;
     }
 }

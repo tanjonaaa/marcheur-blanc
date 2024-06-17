@@ -21,15 +21,15 @@ class MarcheurTest {
     var nexta = new Lieu("Nexta");
     var esti = new Lieu("ESTI");
 
-    var rue1 = new Rue(Set.of(marais, sekolintsika));
-    var rue2 = new Rue(Set.of(sekolintsika, hei));
-    var andiantsihoarana = new Rue(Set.of(hei, pullman));
-    var rue3 = new Rue(Set.of(hei, balançoire));
-    var ranaivo = new Rue(Set.of(pullman, balançoire));
-    var rue4 = new Rue(Set.of(balançoire, esti));
-    var rue5 = new Rue(Set.of(balançoire, boulevardDelEurope));
-    var rue6 = new Rue(Set.of(esti, boulevardDelEurope));
-    var rue7 = new Rue(Set.of(pullman, nexta));
+    var rue1 = new Rue(marais, sekolintsika);
+    var rue2 = new Rue(sekolintsika, hei);
+    var andiantsihoarana = new Rue("Rue Andriantsihoarana", hei, pullman);
+    var rue3 = new Rue(hei, balançoire);
+    var ranaivo = new Rue("Rue Ranaivo", pullman, balançoire);
+    var rue4 = new Rue(balançoire, esti);
+    var rue5 = new Rue(balançoire, boulevardDelEurope);
+    var rue6 = new Rue(esti, boulevardDelEurope);
+    var rue7 = new Rue(pullman, nexta);
 
     var carteDeTana =
         new Carte(Set.of(rue1, rue2, andiantsihoarana, rue3, ranaivo, rue4, rue5, rue6, rue7));
