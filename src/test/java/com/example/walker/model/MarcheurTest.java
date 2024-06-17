@@ -34,16 +34,18 @@ class MarcheurTest {
     var carteDeTana =
         new Carte(Set.of(rue1, rue2, andiantsihoarana, rue3, ranaivo, rue4, rue5, rue6, rue7));
 
-    var bjarni = new Marcheur("Bjarni");
+    var bjarni = new Marcheur("Bjarni", carteDeTana);
 
-    var marcheDeBjarni = bjarni.marcheSur(carteDeTana, hei, esti);
+    var itinéraireDeBjarni = bjarni.marcheEntre(hei, esti);
 
-    var actualLieuDeDépart = marcheDeBjarni.lieux().getFirst();
-    var actualLieuDArrivée = marcheDeBjarni.lieux().getLast();
-    var longueurDeLaMarche = marcheDeBjarni.lieux().size();
+    var actualLieuDeDépart = itinéraireDeBjarni.getFirst();
+    var actualLieuDArrivée = itinéraireDeBjarni.getLast();
+    var longueurDeLaMarche = itinéraireDeBjarni.size();
 
-    assertEquals(hei, actualLieuDeDépart);
-    assertEquals(esti, actualLieuDArrivée);
-    assertTrue(longueurDeLaMarche >= 3);
+    assertEquals(hei, actualLieuDeDépart, "La marche commence à" + hei.name());
+    assertEquals(esti, actualLieuDArrivée, "La marche se termine à " + esti.name());
+    assertTrue(
+        longueurDeLaMarche >= 3,
+        "La marche de " + hei.name() + " vers " + esti.name() + " contient au moins 03 étapes");
   }
 }

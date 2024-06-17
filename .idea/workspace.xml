@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2cb5b687-c138-4980-9da1-3558f0d86ab2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marche.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marche.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marche.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marcheur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/Marcheur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/walker/model/carte/Rue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/walker/model/carte/Rue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/example/walker/model/MarcheurTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/walker/model/MarcheurTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718606961755</updated>
       <workItem from="1718606963048" duration="301000" />
-      <workItem from="1718607288939" duration="4771000" />
+      <workItem from="1718607288939" duration="11630000" />
     </task>
     <servers />
   </component>
